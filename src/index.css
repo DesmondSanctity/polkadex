@@ -132,10 +132,6 @@ code {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
 }
   
-.thumb-container :hover {
-  margin: 0.7rem 0;
-}
-  
 h3 {
   margin-bottom: 0.2rem;
 }
@@ -244,7 +240,72 @@ button:hover {
   justify-content: center;
   margin-bottom: 20px;
 }
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.about-title {
+  width: 0.5ch;
+  margin: auto;
+  margin-top: 20px;
+  color: rgb(16, 166, 236);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: about 4s steps(30) infinite alternate;
+}
   
+@keyframes about {
+  0% {
+    width: 0.5ch;
+  }
+  50% {
+    width: 15ch;
+    color: rgb(218, 55, 5);
+  }
+}
+
+.about-btn{
+  margin: auto;
+  width: 20%;
+  height: 30px;
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  background-image: linear-gradient(
+    -20deg,
+    #ddd6f3 0%,
+    #faaca8 100%,
+    #faaca8 100%
+  );
+  border-radius: 10px;
+}
+
+.not-found {
+  width: 100%;
+  margin: auto;
+  margin-top: 500px;
+  text-align: center;
+  color: rgb(16, 166, 236);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: found 4s steps(30) infinite alternate;
+}
+
+@keyframes found {
+  0% {
+    width: 0.5ch;
+  }
+  50% {
+    width: 15ch;
+    color: rgb(218, 55, 5);
+  }
+}
+
 h3 {
   text-decoration: underline;
 }
